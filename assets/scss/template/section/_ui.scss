@@ -1,0 +1,28 @@
+.ui-title {
+  font-size: 36px;
+  margin: 20px 0 15px;
+}
+
+.ui-title::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: brown;
+  font-size: 36px;
+  font-weight: 600;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .ui-title {
+    font-size: 29px;
+  }
+}
+
+.btn-groups {
+  .v-btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}

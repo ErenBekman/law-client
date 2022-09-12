@@ -1,0 +1,148 @@
+.v-btn--contained {
+  box-shadow: none;
+}
+
+.theme--light.v-btn--active::before {
+  opacity: 0;
+}
+
+.custom-lg-btn {
+  &.v-btn:not(.v-btn--round).v-size--x-large {
+    padding: 0;
+    min-width: 95px;
+  }
+  &.v-btn--fab.v-size--x-large {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+.btn-custom-nm {
+  padding: 0 25px !important;
+}
+
+.btn-custom-md {
+  padding: 15px 35px !important;
+  position: relative;
+  border-top-left-radius: 35px !important;
+  border-bottom-right-radius: 35px !important;
+  overflow: hidden;
+}
+
+.btn-color-white {
+  background-color: #3c4e5b !important;
+  color: #fff !important;
+}
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.btn-banner::after {
+  font-family: "Material Icons";
+  content: "\e55e";
+  width: 100%;
+  height: 100%;
+  background-color: #d3ba6f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.btn-banner:hover::after {
+  top: 0;
+}
+
+.btn-custom-lg {
+  padding: 15px 45px !important;
+}
+
+//
+// Linear Gredient Buttons
+//
+
+.btn-danger-gradient {
+  background: $danger;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    $danger,
+    $orange
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($danger),
+    to($orange)
+  );
+  background: -webkit-linear-gradient(left, $danger, $orange);
+  background: linear-gradient(90deg, $danger 0, $orange);
+  border: 0px;
+
+  &:hover {
+    background: $orange;
+    background: -webkit-linear-gradient(
+      legacy-direction(to right),
+      $orange,
+      $danger
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from($orange),
+      to($danger)
+    );
+    background: -webkit-linear-gradient(left, $orange, $danger);
+    background: linear-gradient(90deg, $orange 0, $danger);
+  }
+
+  &.active,
+  &:active,
+  &:focus {
+    box-shadow: 0px;
+    opacity: 1;
+  }
+}
+
+.v-badge__badge .v-icon {
+  font-size: 12px !important;
+}
+
+.btn-arrow {
+  position: relative;
+
+  span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+  }
+
+  &:hover span,
+  &:focus span {
+    transform: translate3d(-0.5rem, 0, 0);
+  }
+
+  i {
+    position: absolute;
+    width: 1.1em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+  }
+
+  &:hover i,
+  &:focus i {
+    opacity: 1;
+    right: -2rem;
+  }
+}

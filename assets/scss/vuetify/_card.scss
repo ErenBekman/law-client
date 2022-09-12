@@ -1,0 +1,27 @@
+.v-application .v-sheet.v-card:not(.v-sheet--outlined) {
+  box-shadow: $shadow;
+}
+
+.v-sheet.v-card.border-success-all {
+  border: 1px solid $success !important;
+}
+
+.card-shadow {
+  box-shadow: 0 0 30px rgb(115 128 157 / 10%) !important;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .map-title {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .map {
+    display: none;
+  }
+}
