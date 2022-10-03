@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .v-main {
-  background-image: url("~@/assets/images/lawyer/bgMain.png");
+  /* background-image: url("~@/assets/images/lawyer/bgMain.png"); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
