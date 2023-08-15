@@ -5,12 +5,10 @@
         <v-col cols="12" sm="10" md="9" lg="7">
           <div class="text-center">
             <h2 class="section-title font-weight-medium">
-              Experienced & Professional Team
+              Deneyimli ve Profesyonel Ekip
             </h2>
             <p>
-              You can relay on our amazing features list and also our customer
-              services will be great experience for you without doubt and in
-              no-time
+             Ekip arkadaşlarımızın her biri kendi alanında uzman ve deneyimli kişilerden oluşmaktadır.
             </p>
           </div>
         </v-col>

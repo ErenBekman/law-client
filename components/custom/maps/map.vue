@@ -6,12 +6,10 @@
           <v-col cols="12" sm="10" md="9" lg="7">
             <div class="text-center">
               <h2 class="map-title font-weight-medium">
-                Check what our Customers are Saying
+                Adresimize Ulaşmak İçin Haritayı Kullanabilirsiniz
               </h2>
               <p>
-                You can relay on our amazing features list and also our customer
-                services will be great experience for you without doubt and in
-                no-time
+                Çobançeşme Mah. Sanayi Cad. Nish İstanbul Residance C Blok Kat : 6 Daire : 69 Bahçelievler / İstanbul
               </p>
             </div>
           </v-col>

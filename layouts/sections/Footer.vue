@@ -13,20 +13,14 @@
 
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">Telefon</h4>
-          <p class="mt-10 mb-0">Reception : +205 123 4567</p>
-          <p>Office : +207 235 7890</p>
+          <p class="mt-10 mb-0">Ofis : +000 000 0000</p>
         </v-col>
 
         <v-col cols="12" sm="12" md="12" lg="3" class="px-xs-0">
           <h4 class="font-weight-regular font-18">Email</h4>
           <p class="mt-10 mb-0">
-            Office : <a class="dark-link" href="/">xk@hotmail.com</a>
-          </p>
-          <p>
-            Site :
-            <a class="dark-link" href="https://www.wrappixel.com/"
-              >wrappixel.com</a
-            >
+            Ofis : 
+            <a class="dark-link" href="/">...@hotmail.com</a>
           </p>
         </v-col>
 
@@ -39,9 +33,6 @@
             </a>
             <a href="#">
               <i class="mdi mdi-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="mdi mdi-google-plus"></i>
             </a>
             <a href="#">
               <i class="mdi mdi-youtube"></i>

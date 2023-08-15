@@ -1,6 +1,5 @@
 <template>
   <v-app dark>
-    <!--v-if="$route.name!=='login'"-->
     <Header :color="color" :flat="flat" />
     <v-main>
       <nuxt />
@@ -78,4 +77,3 @@ export default {
 };
 </script>
 
-<style></style>

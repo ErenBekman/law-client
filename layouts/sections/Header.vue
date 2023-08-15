@@ -10,13 +10,12 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <!-- <img src="@/assets/images/logos/logo.png" alt="Logo" /> -->
             <v-icon>mdi-scale-unbalanced</v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="title">
-              Küpçük Hukuk Bürosu</v-list-item-title
-            >
+              Küpçük Hukuk Bürosu
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -34,9 +33,9 @@
             <v-icon>{{ icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="subtitile-1">{{
-              text
-            }}</v-list-item-title>
+            <v-list-item-title class="subtitile-1">
+              {{ text }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -60,17 +59,16 @@
         v-if="isXs"
       />
       <div v-else>
-        <v-btn text @click="$vuetify.goTo('#about')">
-          <span class="mr-2">Hakkimizda</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#work')">
-          <span class="mr-2">Çalışma Alanları</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#team')">
-          <span class="mr-2">Ekibimiz</span>
-        </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">İletişim</span>
+        <v-btn 
+            v-for="item in items"
+            :key="item.text"
+            text 
+            @click="$vuetify.goTo(link)"
+        >
+        <v-icon left>{{ item.icon }}</v-icon>
+          <span class="mr-2">
+            {{ item.text }}
+          </span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -86,10 +84,10 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-home-outline", "Hakkımızda", "#about"],
-      ["mdi-information-outline", "Ekibimiz", "#team"],
-      ["mdi-currency-usd", "Çalışma Alanları", "#work"],
-      ["mdi-email-outline", "İletişim", "#contact"]
+      {icon :"mdi-information-outline", text: "Hakkımızda", route:"#about"},
+      {icon :"mdi-account-group-outline", text: "Ekibimiz", route:"#team"},
+      {icon :"mdi-scale-balance", text: "Çalışma Alanları", route:"#work"},
+      {icon :"mdi-email-outline", text: "İletişim", route:"#contact"},
     ]
   }),
   props: {

@@ -14,6 +14,14 @@
               olmak üzere ticari hayatın birçok farklı alanında hizmet
               vermekteyiz.
             </p>
+            <v-chip-group mandatory active-class="grey--text">
+              <v-chip
+                v-for="tag in tags"
+                :key="tag"
+              >
+                {{ tag }}
+              </v-chip>
+            </v-chip-group>
           </div>
         </v-col>
       </v-row>
@@ -37,7 +45,6 @@
               <h5 class="font-weight-medium font-18 text--center">
                 {{ item.text }}
               </h5>
-              <!-- <p class="font-14 mb-0">Book Covers</p> -->
             </v-card-text>
           </v-card>
         </v-col>
@@ -56,11 +63,13 @@ export default {
           id: 1,
           text: "Ticaret Hukuku",
           img: require("@/assets/images/lawyer/17.png")
+          // img: require("@/assets/images/lawyer/ticaret/ticaret-1.jpg")
         },
         {
           id: 2,
           text: "Ceza Hukuku",
           img: require("@/assets/images/lawyer/15.png")
+          // img: require("@/assets/images/lawyer/ceza/ceza-1.jpg")
         },
         {
           id: 3,
@@ -71,6 +80,7 @@ export default {
           id: 4,
           text: "Gayrimenkul Hukuku",
           img: require("@/assets/images/lawyer/13.png")
+          // img: require("@/assets/images/lawyer/gayrimenkul/gayrimenkul-1.jpg")
         },
         {
           id: 5,
@@ -82,7 +92,18 @@ export default {
           text: "Aile Hukuku",
           img: require("@/assets/images/lawyer/24.svg")
         }
-      ]
+      ],
+      tags: [
+        'Şirketler Hukuku',
+        'Vergi Hukuku',
+        'Uluslararası Ticaret Hukuku',
+        'Tahkim',
+        'Sözleşmeler Hukuku',
+        'İş Hukuku',
+        'İnşaat Hukuku',
+        'Gayrimenkul Hukuku',
+        'İcra İflas Hukuku',
+      ],
     };
   },
   mounted() {
